@@ -1,9 +1,9 @@
 pipeline{
-    agent{ label 'JDK11'}
+    agent{ label 'JDK_11'}
     stages{
         stage('Source Code'){
             steps {
-                git branch:'declarative', url: 'https://github.com/pixelswapnil13/BasicNodeJsProgramme.git'
+                git branch:'main', url: 'https://github.com/manasbishoyi/Nodejs_declarative.git'
             }
         }
         stage('Dependencies') {
